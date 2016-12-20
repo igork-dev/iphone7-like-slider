@@ -1,1 +1,4 @@
 node_modules/
+_loc/
+*.cmd
+*.bat

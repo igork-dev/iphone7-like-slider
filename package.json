@@ -1,0 +1,35 @@
+{
+  "name": "iphone-like-slider",
+  "version": "1.0.0",
+  "description": "desc",
+  "main": "dist/islider.js",
+  "dependencies": {
+    "jquery": "*"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.5.1",
+    "css-loader": "^0.25.0",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.9.0",
+    "postcss-loader": "^1.0.0",
+    "webpack": "^1.13.2"
+  },
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/igork-dev/iphone7-like-slider.git"
+  },
+  "keywords": [
+    "iphone",
+    "slider",
+    "toogle"
+  ],
+  "author": "1g0rrr",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/igork-dev/iphone7-like-slider/issues"
+  },
+  "homepage": "https://github.com/igork-dev/iphone7-like-slider#readme"
+}

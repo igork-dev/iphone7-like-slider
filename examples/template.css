@@ -1,0 +1,105 @@
+div, section, img {
+    /*outline:1px solid rgba(255, 0, 0, 0.3);*/
+}
+
+body {
+    /*background: whitesmoke;*/
+}
+
+.fixedMenu {
+    position: fixed;
+    width: 100%;
+    background-color: lawngreen;
+    /*z-index: 210;*/
+}
+
+/* PARENTS */
+.topParent {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.afterTopParent {}
+.afterBottomParent {
+}
+.hiddenSuperParent{
+    /*padding-bottom: 50px;*/
+    /*background-color: green;*/
+    overflow: hidden;
+}
+.hiddenParent{
+    /*TODO проверить эти паддинги потом*/
+    /*padding-bottom: 50px;*/
+    /*padding-top: 50px;*/
+    /*margin-bottom: 50px;*/
+    /*margin-top: 50px;*/
+    /*background-color: red;*/
+    /*overflow: hidden;*/
+}
+
+.bottomParent {
+    /*margin: 20px 0;*/
+    /*padding-bottom: 50px;*/
+}
+.afterBottomParent {}
+
+/* CHILDRENS */
+/* Top Parent */
+.zeroSection {
+    /*background-color: #0085ba;*/
+    /*margin: 20px 0;*/
+    /*background: whitesmoke;*/
+}
+.topSection {}
+
+/* afterTopParent */
+
+/* hiddenParent */
+.hiddenPrevSibling {
+    padding: 20px 0;
+    margin: 30px 0;
+    background-color: #008888;
+}
+.hiddenSection {
+    background-color: lavender;
+    /*padding: 120px 0;*/
+    /*margin: 30px 0;*/
+    /*TODO проверить эти паддинги потом*/
+    padding-top: 20px;
+    padding-bottom: 20px;
+    /*padding: inherit;*/
+    /*position: relative;*/
+}
+
+.hiddenNextSibling {
+    padding: 20px 0;
+    margin: 30px 0;
+    /*background-color: #008855;*/
+}
+/*.coverAfter:before {*/
+    /**/
+/*}*/
+/* bottomParent */
+.bottomSection {
+    background-color: #998855;
+    /*margin: 30px 0;*/
+    padding-bottom: 50px;
+}
+.afterBottomSection {
+    /*background-color: #008888;*/
+    padding-bottom: 40px;
+}
+
+/* afterBottomParent */
+.isliderCloseButton {
+    transform: rotate(45deg);
+}
+
+.iSlider-trigger-icon {
+    margin: 0 auto; /* align to center */
+    width: 48px;
+    height: 48px;
+    /*background: url(img/plus.png) no-repeat;*/
+    /*background-size: cover;*/
+    transition: transform 1s cubic-bezier(0.6, 0, 0.48, 1);
+}
+

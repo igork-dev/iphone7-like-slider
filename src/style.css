@@ -1,0 +1,34 @@
+/* Collapse hidden section */
+.collapsed {
+    height: 0px;
+    overflow: hidden;
+}
+
+/* Buttons */
+.isliderOpenButton {
+    cursor: pointer;
+}
+
+.isliderCloseButton {
+    cursor: pointer;
+    margin: 0 auto;
+    display: block;
+}
+
+.isliderCloseButtonWrapper {
+    position: absolute;
+    width: 100%;
+}
+
+/* Animation */
+.sectionAnimation {
+    /*transition-property: opacity, transform, color, background-color;*/
+    /*transition-duration: 1s,1s,.35s,.35s;*/
+    /*transition-timing-function: cubic-bezier(0.6, 0, 0.48, 1),cubic-bezier(0.6, 0, 0.48, 1),linear,linear;*/
+    /*transition-delay: 0s*/
+    transition: transform 1s cubic-bezier(0.6, 0, 0.48, 1);
+}
+
+
+
+

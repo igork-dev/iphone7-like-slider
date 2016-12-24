@@ -15,7 +15,7 @@
         this.element = options.element;
         this.parentElement = options.parentElement;
         this.marginInSection = options.marginInSection;
-        this.marginFixed = options.marginFixed;
+        this.marginInFixed = options.marginInFixed;
         this.offset = options.offset
         this.offsetHandler = options.offsetHandler;
 
@@ -49,14 +49,14 @@
         var startPos =
             this._parentTop
             + this.marginInSection
-            - this.marginFixed;
+            - this.marginInFixed;
 
         // Finish point of sticked element
         var finishPos =
             this._parentTop
             + this._distance
             - this.element.height()
-            - this.marginFixed
+            - this.marginInFixed
             - this._marginBottomInSection;
 
         // Screen top
@@ -76,7 +76,7 @@
 
             this.element.css("position", "fixed");
             this.element.css( "top", 0 );
-            this.element.css("marginTop", this.marginFixed);
+            this.element.css("marginTop", this.marginInFixed);
 
             this.isStick = true;
 

@@ -10,14 +10,19 @@
 }
 
 .isliderCloseButton {
-    cursor: pointer;
-    margin: 0 auto;
-    display: block;
+    /*cursor: pointer;*/
+    /*margin: 0 auto;*/
+    /*display: inline;*/
+
+    position: absolute;
+    left: 50%;
+    margin-left: -300px;
 }
 
 .isliderCloseButtonWrapper {
-    position: absolute;
-    width: 100%;
+    /*position: absolute;*/
+    /*width: 100%;*/
+    /*text-align: center;*/
 }
 
 /* Animation */

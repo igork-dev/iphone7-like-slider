@@ -70,6 +70,7 @@ module.exports = {
         port: 3000,
         inline: true,
         contentBase: __dirname + '/examples' /* Пусть с которого раздается статика */
+        //contentBase: __dirname + '/_loc' /* Пусть с которого раздается статика */
     }
 };
 

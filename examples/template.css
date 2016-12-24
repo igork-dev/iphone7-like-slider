@@ -1,11 +1,22 @@
-div, section, img {
-    /*outline:1px solid rgba(255, 0, 0, 0.3);*/
+/* Normalize */
+html {
+    font-family: sans-serif; /* 1 */
+    line-height: 1.15; /* 2 */
+    -ms-text-size-adjust: 100%; /* 3 */
+    -webkit-text-size-adjust: 100%; /* 3 */
 }
+body {
+    margin: 0;
+}
+h1 {
+    font-size: 2em;
+    /*margin: 0.67em 0;*/
+}
+/**/
 
 body {
     /*background: whitesmoke;*/
 }
-
 .fixedMenu {
     position: fixed;
     width: 100%;
@@ -13,93 +24,39 @@ body {
     /*z-index: 210;*/
 }
 
-/* PARENTS */
-.topParent {
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
-.afterTopParent {}
-.afterBottomParent {
-}
-.hiddenSuperParent{
-    /*padding-bottom: 50px;*/
-    /*background-color: green;*/
-    overflow: hidden;
-}
-.hiddenParent{
-    /*TODO проверить эти паддинги потом*/
-    /*padding-bottom: 50px;*/
-    /*padding-top: 50px;*/
-    /*margin-bottom: 50px;*/
-    /*margin-top: 50px;*/
-    /*background-color: red;*/
-    /*overflow: hidden;*/
-}
-
-.bottomParent {
-    /*margin: 20px 0;*/
-    /*padding-bottom: 50px;*/
-}
-.afterBottomParent {}
-
-/* CHILDRENS */
-/* Top Parent */
-.zeroSection {
-    /*background-color: #0085ba;*/
-    /*margin: 20px 0;*/
-    /*background: whitesmoke;*/
-}
-.topSection {}
-
-/* afterTopParent */
-
-/* hiddenParent */
-.hiddenPrevSibling {
-    padding: 20px 0;
-    margin: 30px 0;
-    background-color: #008888;
-}
-.hiddenSection {
+.hiddenSection1 {
     background-color: lavender;
-    /*padding: 120px 0;*/
-    /*margin: 30px 0;*/
-    /*TODO проверить эти паддинги потом*/
-    padding-top: 20px;
-    padding-bottom: 20px;
-    /*padding: inherit;*/
-    /*position: relative;*/
 }
-
-.hiddenNextSibling {
-    padding: 20px 0;
-    margin: 30px 0;
-    /*background-color: #008855;*/
+.hiddenSection2 {
+    background-color: lavender;
 }
-/*.coverAfter:before {*/
-    /**/
+/*.prevSibling {*/
+    /*outline:1px solid rgba(255, 0, 0, 0.3);*/
+    /*padding: -13px 0;*/
 /*}*/
-/* bottomParent */
-.bottomSection {
-    background-color: #998855;
-    /*margin: 30px 0;*/
-    padding-bottom: 50px;
-}
-.afterBottomSection {
-    /*background-color: #008888;*/
-    padding-bottom: 40px;
-}
+
+/*.nextSibling {*/
+    /*outline:1px solid rgba(255, 0, 0, 0.3);*/
+    /*display: inline-block;*/
+    /*width: 100%;*/
+/*}*/
 
 /* afterBottomParent */
 .isliderCloseButton {
     transform: rotate(45deg);
 }
+html { overflow-y: scroll; }
 
 .iSlider-trigger-icon {
     margin: 0 auto; /* align to center */
     width: 48px;
-    height: 48px;
+    /*height: 48px;*/
     /*background: url(img/plus.png) no-repeat;*/
     /*background-size: cover;*/
-    transition: transform 1s cubic-bezier(0.6, 0, 0.48, 1);
+    /*transition: transform 1s cubic-bezier(0.6, 0, 0.48, 1);*/
 }
 
+.iSlider-trigger-icon2 {
+    margin: 0 auto; /* align to center */
+    width: 48px;
+}

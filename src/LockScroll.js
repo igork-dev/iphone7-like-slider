@@ -11,6 +11,8 @@
 
     // Disable scroll by middle mouse button and scrollbar
     LockScroll.prototype._handleScrollbar = function (event) {
+        //TODO временный костыль. Починить, т.к. не всегда включаю скролл лок.
+        if( this.lockToScrollPos == undefined ) return
         $(window).scrollLeft(this.lockToScrollPos[0]);
         $(window).scrollTop(this.lockToScrollPos[1]);
     };
@@ -32,6 +34,8 @@
 
     LockScroll.prototype.enable = function (event) {
 
+        if( this.isLocked ) return;
+
         this.isLocked = true;
 
         this.lockToScrollPos = [$(window).scrollLeft(), $(window).scrollTop()];
@@ -42,9 +46,9 @@
     }
 
     LockScroll.prototype.disable = function (event) {
-        this.isLocked = false;
 
         $(window).off("mousewheel.islider DOMMouseScroll.islider touchmove.islider keydown.islider scroll.islider");
+        this.isLocked = false;
     }
 
     window.LockScroll = LockScroll;
